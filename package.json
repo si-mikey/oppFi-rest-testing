@@ -1,0 +1,17 @@
+{
+  "name": "OppFi REST Test",
+  "version": "1.0.0",
+  "description": "OppFi REST API testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Luis Lopez",
+  "license": "MIT License",
+  "type": "module",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
