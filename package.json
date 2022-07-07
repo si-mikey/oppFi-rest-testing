@@ -4,7 +4,9 @@
   "description": "OppFi REST API testing framework",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test-all-offer": "mocha",
+    "test-offer-accept": "mocha --grep @offer-accept",
+    "test-offer-decline": "mocha --grep @offer-decline"
   },
   "author": "Luis Lopez",
   "license": "MIT License",

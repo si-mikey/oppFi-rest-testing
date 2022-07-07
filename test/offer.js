@@ -15,11 +15,9 @@ const request = axios.create({
   method: 'post'
 });
 
-//console.dir(response.data, {depth:null})
+describe('API tests for /offer endpoint @offer', function () {
 
-describe('API tests for /offer endpoint', function () {
-
-  describe('Should return an accepted offer', function () {
+  describe('Should return an accepted offer @offer-accept', function () {
 
     it('should return status code 201', async function () {
       const response = await request.post('', offerData);
@@ -43,7 +41,7 @@ describe('API tests for /offer endpoint', function () {
     });
   });
 
-  describe('Should declined a customer', function () {
+  describe('Should declined a customer @offer-decline', function () {
 
     it('should return status code 315', async function () {
       const response = await request.post('', offerDeniedData);
